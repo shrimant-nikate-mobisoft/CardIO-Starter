@@ -17,15 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Och-0U-UgW">
-                                <rect key="frame" x="20" y="239" width="560" height="122"/>
-                                <string key="text">s adksjdfklsj j;lkadl;fkdl ds dklsjaljfdlskjfljdlsjkdfs jkjkdfsljdlsj dfsldjskla dfsjdlskjdskljds dsjkadks adksjdfklsj j;lkadl;fkdl ds dklsjaljfdlskjfljdlsjkdfs jkjkdfsljdlsj dfsldjskla dfsjdlskjdskljds dsjkadks adksjdfklsj j;lkadl;fkdl ds dklsjaljfdlskjfljdlsjkdfs jkjkdfsljdlsj dfsldjskla dfsjdlskjdskljds dsjkadks adksjdfklsj j;lkadl;fkdl ds dklsjaljfdlskjfljdlsjkdfs jkjkdfsljdlsj dfsldjskla dfsjdlskjdskljds dsjkadks adksjdfklsj j</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Och-0U-UgW">
+                                <rect key="frame" x="20" y="300" width="560" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyP-Fu-eNg">
-                                <rect key="frame" x="231" y="369" width="138" height="30"/>
+                                <rect key="frame" x="231" y="308" width="138" height="30"/>
                                 <state key="normal" title="Start Scanning Card"/>
                                 <connections>
                                     <action selector="startScanningButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxQ-h7-6WZ"/>
@@ -43,6 +42,9 @@
                             <constraint firstItem="xyP-Fu-eNg" firstAttribute="top" secondItem="Och-0U-UgW" secondAttribute="bottom" constant="8" id="yPn-ee-jdE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelResults" destination="Och-0U-UgW" id="7AL-ee-x5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

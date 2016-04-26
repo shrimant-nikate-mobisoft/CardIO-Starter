@@ -10,6 +10,8 @@ import UIKit
 
 class ReadyMadeViewController: UIViewController {
 
+    @IBOutlet weak var labelResults: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
